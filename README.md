@@ -18,12 +18,12 @@ No se requiere instalación avanzada. Solo sigue estos pasos:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tuusuario/web-breaking-bad.git
+   git clone https://github.com/nelson2411/Breaking_bad_HTML5_project
    ```
 2. **Abrir el archivo `index.html` en tu navegador**
 3. ¡Disfruta de la web! 🔥
 
-🔗 También puedes verlo en **Netlify** aquí: [Enlace a la web](https://tusitio.netlify.app)
+🔗 También puedes verlo en **Netlify** aquí: [Enlace a la web](https://lengmarkbreakingbad.netlify.app/)
 
 ## 🛠️ Tech Stack
 
