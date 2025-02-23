@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./IMG/icon.png" />
+    <link rel="stylesheet" href="./css/styles.index.css" />
+    <meta
+      name="description"
+      content="Página web corporativa Fan Service de Breaking Bad. Desarrollada con HTML & CSS."
+    />
+    <meta name="author" content="Nelson Rosales" />
+    <meta
+      name="keywords"
+      content="Breaking Bad, Fan Service, HTML, CSS, Web Corporativa"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Formulario | Breaking Bad</title>
+  </head>
+  <body class="form-body">
+    <header class="header_form">
+      <img src="./IMG/logo.PNG" alt="Logo de Breaking Bad" />
+      <h3>
+        I did it for me. I liked it. I was good at it. And I was really... I was
+        alive.
+      </h3>
+    </header>
+    <section class="form-section">
+      <!-- all this informatio must be send to the email: raul.rodriguez@proeducaglobal.com once the form is submitted -->
+      <h2 class="form-section_title">Breaking Bad - Que comience el juego!</h2>
+      <form
+        action="mailto:raul.rodriguez@proeducaglobal.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Introduce tu nombre"
+          />
+        </div>
+        <div>
+          <label for="apellido">Apellidos:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+            placeholder="Introduce tus apellidos"
+          />
+        </div>
+        <div>
+          <label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+          <!-- minimo: 01/01/2006 -->
+          <input
+            type="date"
+            id="fechaDeNacimiento"
+            name="fechaDeNacimiento"
+            value="2020-07-22"
+            min="2006-01-01"
+          />
+        </div>
+        <div>
+          <label for="direccion"> Dirección: </label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="Introduce tu dirección"
+          />
+        </div>
+        <div>
+          <label for="genero-select" class="genero"> Indique su género: </label>
+          <select name="genero" id="genero-select">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label for="documento"> Indique DNI/NIE: </label>
+          <input
+            type="text"
+            id="documento"
+            name="documento"
+            required
+            placeholder="Introduce tu DNI/NIE"
+          />
+        </div>
+        <div>
+          <label for="email"> Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Introduce tu email"
+          />
+        </div>
+        <div>
+          <label for="personaje" id="personaje">
+            Elige tu personaje favorito:
+          </label>
+          <select name="personaje" id="personaje">
+            <option value="walter">Walter White</option>
+            <option value="jesse">Jesse Pinkman</option>
+            <option value="saul">Saul Goodman</option>
+            <option value="gus">Gus Fring</option>
+            <option value="mike">Mike Ehrmantraut</option>
+            <option value="hank">Hank Schrader</option>
+            <option value="skyler">Skyler White</option>
+            <option value="lydia">Lydia Rodarte-Quayle</option>
+            <option value="todd">Todd Alquist</option>
+            <option value="marie">Marie Schrader</option>
+            <option value="otros personajes">Otros personajes</option>
+          </select>
+        </div>
+        <!-- creamos el elemento para adjuntar un fichero. Restringimis a PDF y JPG -->
+        <div>
+          <label for="fichero"> Adjunta tu CV: </label>
+          <input type="file" id="fichero" name="fichero" accept=".pdf,.jpg" />
+        </div>
+        <div class="mensaje">
+          <label for="mensaje"> Mensaje: </label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Introduce tu mensaje"
+          ></textarea>
+        </div>
+        <button type="reset" class="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>

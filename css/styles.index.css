@@ -1,0 +1,375 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Breaking_Bad";
+  src: url("../fonts/Breaking_Bad.ttf") format("truetype");
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+.bg-image body {
+  background-image: url("../IMG/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Breaking_Bad";
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+.header_one img {
+  width: 200px;
+  height: 200px;
+}
+
+.header_one {
+  /* center the elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.index-quote {
+  font-size: 4.5em;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #272321;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.poster {
+  /* this is an image, i need it to be 700px width and 300px height*/
+  width: 700px;
+  height: 300px;
+  border: 10px outset #461600;
+  border-radius: 22px;
+  box-shadow: 0 0 10px 5px #272321;
+}
+
+.header_one {
+  /* center the elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.header_form h3 {
+  font-size: 3.5em;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #000000;
+}
+
+/* form */
+.header_form {
+  /* center the elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.header_form_2 {
+  font-size: 2.5em;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.form-section {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.form-section h2 {
+  font-size: 1.8em;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #000000;
+}
+
+.form-section_title {
+  font-size: 1.5em;
+  color: whitesmoke;
+  text-shadow: 0 0 10px #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 1.6em;
+}
+
+form label {
+  color: rgb(0, 0, 0);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* style for the element input[type="file"] */
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #1c2d1f;
+  color: whitesmoke;
+
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #1c2d1f;
+}
+
+/* tabla periodica */
+
+.tabla_body > body {
+  background-color: #0c3e11 !important;
+}
+
+.tabla_header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabla_header h1 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title_br {
+  background-color: #7fdd05;
+  padding: 0.8rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title_ba {
+  background-color: #7fdd05;
+  padding: 0.8rem;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tabla_subheader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 380px;
+}
+
+.tabla_subheader p {
+  color: #a80000;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-left: 1.3rem;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1rem;
+  background-color: black;
+  margin: 20px auto;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+  border: 10px solid #000000;
+  text-align: center;
+  width: 80px;
+  height: 100px;
+  background-color: #558811;
+}
+
+table > tbody > td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td > p {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+td > img {
+  /* center image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.oneTwo {
+  background-color: #000000;
+}
+
+.hank_bg {
+  background-image: url("../IMG/tabla_periodica/hankschrader.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marie_bg {
+  background-color: #8760bb;
+}
+
+.white_bg {
+  background-color: #f0f7c8;
+}
+
+.dark_green_bg {
+  background-color: #63702a;
+}
+
+.sage-green {
+  background-color: #bcc49b;
+}
+
+.moss-green {
+  background-color: #828c56;
+}
+
+.soft-chartreuse {
+  background-color: #d4e87d;
+}
+.lime-green {
+  background-color: #b7d91e;
+}
+.lemon-green {
+  background-color: #c6e04f;
+}
+
+.table_two {
+  width: 45% !important;
+  border: 3px solid #000;
+  border-collapse: collapse;
+}
+
+.table_two td {
+  background-color: #c2c72a;
+}
+
+.table_two img {
+  width: 70%;
+}
+
+.table_two td span {
+  font-size: 0.8rem;
+}
